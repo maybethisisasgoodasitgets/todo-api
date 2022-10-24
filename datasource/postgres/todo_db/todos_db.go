@@ -8,10 +8,10 @@ import (
 )
 
 const (
-	postgresTodoUsername = "potgres"
-	postgresTodoPassword = "admin"
-	postgresTodoHost     = "locolhost"
-	postgresTodoSchema   = "reza"
+	postgresTodoUsername = "postgres_todo_username"
+	postgresTodoPassword = "postgres_todo_password"
+	postgresTodoHost     = "postgres_todo_host"
+	postgresTodoSchema   = "postgres_todo_schema"
 )
 
 var (
