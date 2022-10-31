@@ -19,7 +19,7 @@ func Create(c *gin.Context){
 		return
 	}
 
-	c.JSON(http.StatusCreated,result.Marshall(c.Header("X-Public")== "true"))
+	c.JSON(http.StatusCreated,result.Marshall(c.GetHeader("X-Public")== "true"))
 
 
  
