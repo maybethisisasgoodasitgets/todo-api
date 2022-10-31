@@ -27,6 +27,7 @@ require (
 )
 
 require (
+	github.com/lib/pq v1.10.7
 	go.uber.org/atomic v1.6.0 // indirect
 	go.uber.org/multierr v1.5.0 // indirect
 	go.uber.org/zap v1.14.1 // indirect

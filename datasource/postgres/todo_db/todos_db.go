@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	_ "github.com/lib/pq"
 )
 
 const (
@@ -25,8 +26,8 @@ var (
 
 func init(){
 
-	dataSourceName := fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=utf8",username,password,host,schema)
-
+	dataSourceName := fmt.Sprintf("postgres://%s:%s@%s/%s?sslmode=disable",username,password,host,schema)
+    fmt.Println(dataSourceName)
 	var err error
 	Client, err = sql.Open("postgres",dataSourceName)
 	if err != nil {

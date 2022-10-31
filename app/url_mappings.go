@@ -1,11 +1,14 @@
 package app
 
-import "todo/app/controllers/ping"
+import (
+	"todo/controllers/ping"
+	"todo/controllers/items"
+)
 
 
 
 
 func mapUrls(){
 	router.GET("/ping",ping.Ping)
-	router.POST("/item",item.Create)
+	router.GET("/item/create/:item",items.Create)
 }
